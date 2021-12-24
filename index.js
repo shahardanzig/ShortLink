@@ -8,5 +8,10 @@ const app = express()
 
 app.use(bodyParser.json({ limit: '1000mb' }));
 
+// connect to mongodb
+const connection = require('./connections/mongodb')
+connection.once('open', () => console.log("successfully connected to mongodb"))
+connection.on('error', (error) => console.log(`error connecting to mongodb - ${error}`))
+
 // Listen for incoming requests
 app.listen(PORT, () => console.log(`server started, listening PORT ${PORT}`));
