@@ -1,0 +1,24 @@
+{
+  "name": "shortlink",
+  "version": "1.0.0",
+  "description": "encode & decoded url service",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahardanzig/ShortLink.git"
+  },
+  "author": "shahar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahardanzig/ShortLink/issues"
+  },
+  "homepage": "https://github.com/shahardanzig/ShortLink#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  }
+}
