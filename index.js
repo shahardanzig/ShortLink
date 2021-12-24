@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000
 const app = express()
 
 app.use(bodyParser.json({ limit: '1000mb' }));
-app.use('/api/url', require('./controllers/url/url'))
+app.use('/', require('./controllers/url/url'))
 
 // connect to mongodb
 const connection = require('./connections/mongodb')
